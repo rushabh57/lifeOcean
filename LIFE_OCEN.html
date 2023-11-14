@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/L_O.png" type="image/x-icon">
+
+    <title>HOME_PAGE</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+:root
+{
+    --color-1: #5ABCD8;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #f5f5f5;
+    height: 100vh;
+}
+
+
+.hero-section
+{
+    width: 100%;
+    height: 100%;
+    background: url(/Tatyana\ _\ klevenskiy.webp)  no-repeat ;
+    background-size: cover;
+}
+.wrapper
+{
+    margin: auto;
+    /* background: rgba(225,225,225,0.234); */
+    height: 100%;
+    width: 96%;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo
+{
+    height: 50px;
+    width: 150px;
+    overflow: hidden;
+}
+.logo img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+nav .nav-links a 
+{
+color: #f5f5f5;
+text-decoration: none;
+font-size: 1.2rem;
+font-family: sans-serif;
+margin: 0.5rem;
+line-height: 90px;
+padding: 0.5rem;
+text-transform: uppercase;
+}
+.nav-links a:hover
+{
+    background: black;
+    color: #f5f5f5;
+}
+.nav-links button
+{
+    text-transform: uppercase;
+    outline:none;
+    border: 1px solid black;
+    height: 35px;
+    width: 100px;
+    margin: .3rem;
+    padding: .3rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.nav-links button:nth-child(3)
+{
+    color: black;
+    background-color: #f5f5f5;
+}
+.nav-links button:nth-child(4)
+{
+    background-color: black;
+    color: #f5f5f5;
+}
+/* #3595b5 */
+.nav-links .Search-btn
+{
+    /* width: 35px; */
+    width: auto;
+    height: 35px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: #fff;
+    /* overflow: hidden; */
+}
+.Search-btn input
+{
+    height: 30px;
+    /* overflow: hidden; */
+    z-index: -1;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid #3595b5;
+}
+.Search-btn:hover input
+{
+    border-bottom: 2px solid #3595b5;
+    z-index: 1;
+    background-color: black;
+    color: #fff;
+    caret-color: #3595b5  ;
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+}
+.Search-btn:hover
+{
+   box-shadow: 0 0 6px rgba(225,225,225,0.234); 
+   cursor: pointer;
+   width: 190px;
+}
+
+
+
+.hero-section-texts
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+.Left-Texts
+{
+}
+.hero-section-texts
+.Left-Texts h1
+{
+    font-size: 3.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+.hero-section-texts
+.Left-Texts button
+{
+    text-transform: uppercase;
+    outline:none;
+    border: 1px solid black;
+    height: 35px;
+    width: 150px;
+    margin: .3rem;
+    padding: .3rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Right-Animation
+{
+    align-self: flex-end;
+    padding: 1rem;
+    font-size: 2rem;
+    animation: down linear infinite 1s;
+
+}
+@keyframes down
+{
+  0%
+  {
+    transform: translateY(5%);
+    opacity: .2;
+  }
+
+  100%
+  {
+    transform: translateY(20%);
+  }
+}
+  /* menu */
+  .checkbtn
+        {
+            font-size: 30px;
+            float: right;
+            color: #fff;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+            background-color: black;
+            padding: 0.55rem ;
+            font-size: 1.2rem;
+            height: 35px;
+            width: 35px;
+
+        }
+        #Check
+        {
+            display: none;
+        }
+        @media (max-width:670px)
+         {
+            .two-cards
+           { 
+             flex-wrap: wrap;
+           }    
+        }
+
+        @media (max-width:580px)
+        {   
+            .compeny-information
+            .infomation-Right .texts
+            {
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              width: auto;
+            }
+
+        nav .nav-links
+        {
+            z-index: 1; 
+        }
+        nav .nav-links button
+        {
+            position: relative;
+            bottom: 100%;
+            right: 0;
+        }
+        nav .nav-links button:nth-child(5)
+        {
+         display: block;
+         width: 57%;
+         margin: auto;
+        }
+        .hero-section-texts
+        {
+            flex-wrap: wrap;
+        }
+
+
+        .hero-section-texts .Left-Texts
+        {
+            margin-top: 7rem;
+        }
+        .hero-section-texts .Right-Animation
+        {
+            margin-top: 7rem;
+            margin-left: 9rem;
+        }
+        .Up-Btn
+        {
+            height: 55px;
+            width: 55px;
+        } 
+    }
+        @media (max-width:858px) 
+        {
+        .checkbtn
+        {
+            display: block;
+            color: #fff;
+        }   
+
+        #Check:checked ~ .nav-links
+        {
+            left: 0;
+        }
+        nav .nav-links
+        {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background: #2c3e508d;
+            backdrop-filter: blur(3px);
+            top: 80px;
+            left: -100%;
+            transition: all 0.56s;
+            text-align: center; 
+        }
+        nav .nav-links a
+        {
+       border-bottom: 2px solid transparent;
+        }
+        nav .nav-links a:hover
+        {
+       background-color: transparent;
+       border-bottom: 2px solid #3595b5;
+        }
+        .Up-Btn
+        {
+            height: 70px;
+            width: 70px;
+        }
+        .informatoin
+{
+    /* background-color: red; */
+    flex-wrap: wrap;
+}
+
+    }
+
+.wrapper .heading
+{
+    width: 50%;
+    margin: auto;
+}
+.wrapper  .heading h1
+{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #3595b5;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 550;
+    /* background-color: #f5f5f5; */
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.line
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #3595b5;
+
+}
+.two-cards
+{
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* background: url(liquid-cheese.svg); */
+}
+.two-cards .card
+{
+    height: 27rem;
+    width: 20rem;
+    background: #fff;
+    margin: 0rem 2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.two-cards .card:nth-child(1)
+{
+    background: url(https://images8.alphacoders.com/120/thumb-1920-1207071.jpg) center;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+}
+.two-cards .card:nth-child(2)
+{
+    background: url(https://media.istockphoto.com/id/1023819892/photo/underwater-world-with-school-fish-swim-above-a-coral-reef-and-sun-light.jpg?s=612x612&w=0&k=20&c=PAnPv7Eww_NDIuhiKoWky3tBVRyEcjHxy8VR9wPmu3o=) center;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+}
+.card .card-heading
+{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #3595b5;
+    padding: 1rem;
+    letter-spacing: 1px;
+    backdrop-filter: blur(1px);
+    background:linear-gradient( black 30%,transparent );
+}
+.card .card-paregraph
+{
+    padding: 1rem;
+    color: #f5f5f559;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    transition: 1s;
+}
+.card:hover .card-paregraph
+{
+    bottom: 0;
+}
+.card-paregraph:hover
+{
+    color: #f5f5f5;
+}
+.card .card-button
+{
+    background: rgba(225,225,225,0.234);
+    display: inline-block;
+    backdrop-filter: blur(3px);
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 4%;
+    left: 4%;
+    overflow: hidden;
+}
+.card-button a
+{
+    text-decoration: none;
+    color: #f5f5f5;
+    font-family: sans-serif;
+}
+.card-button a i
+{
+    font-size: .9rem;
+    color: #f5f5f559;
+    transition:transform 500ms;
+}
+.card-button a:hover  i
+{
+    transform: translateX(30%);
+    
+}
+/*  */
+/* section:nth-child(3){
+    background: url(/liquid-cheese\ \(1\).svg);
+} */
+
+.Up-Btn
+{
+    background-color: rgba(0, 0, 0, 0.119);
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+}
+.Up-Btn img
+{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    transition:transform 500ms ,     background-color 600ms , opacity 450ms ;
+    opacity: 0.3;
+    
+}
+
+.Up-Btn:hover img
+{
+    opacity: 1;
+    transform: rotate(90deg);
+    background-color: black;
+
+}
+
+</style>
+<body>
+    
+    <header
+    class="hero-section">
+        <div class="wrapper">
+
+            <nav>
+
+                <input type="checkbox" name="" id="Check">
+                    <label for="Check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <div class="logo" id="TOTHETOP">
+                    <img src="/L_O-removebg-preview.png" alt="">
+                </div>
+                <div class="nav-links">
+                    <a href="#">species</a>
+                    <a href="#">What We Are</a>
+                    <button>Login</button>
+                    <button>SignUp</button>
+                    <button class="Search-btn">
+                            <input type="search" name="" id="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                    
+
+            </nav>
+
+            <div class="hero-section-texts">
+                <div class="Left-Texts">
+                <h1>Behind The <br> Surfece</h1>
+                <button class="re-btn">Lean More!</button>
+                </div>
+                <div class="Right-Animation">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+<section>
+    <div class="wrapper">
+        <div class="heading">
+        <h1>species</h1>
+        <div class="line"></div>
+        </div>
+        <div class="two-cards">
+            <div class="card">
+                <h4 class="card-heading">Predators</h4>
+                <p class="card-paregraph">
+                    Predator loss in the ocean is a growing problem in our world today. Sharks are the main loss of predators in the ocean, with a wide verity of species in the ocean Sharks sit at the top of the food chain. They live within the biome of the ocean which has different species living only in certain part of the ocean so the ocean has biomes within its self with shark species with almost all of it.
+                </p>
+                <div class="card-button">
+                    <a href="">
+                    Learn More
+                    <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <h4 class="card-heading">Deep Sea Fishes</h4>
+                <p class="card-paregraph">
+    Deep-sea fish are fish that live in the darkness below the sunlit surface waters, that is below the epipelagic or photic zone of the sea. The lanternfish is, by far, the most common deep-sea fish. Other deep sea fishes include the flashlight fish, cookiecutter shark, bristlemouths, anglerfish, viperfish, and some species of eelpout.
+            </p>
+            <div class="card-button">
+                <a href="">
+                Learn More
+                <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="Up-Btn" >
+    <a href="#TOTHETOP">
+        <img src="https://cdn-icons-png.flaticon.com/512/3835/3835666.png" alt="">
+    </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+.pulse
+{
+    animation: pulse 3s infinite linear;
+}
+@keyframes pulse 
+{
+0% { box-shadow: 0 0 0 0 hsl(0, 0%, 100%); }
+60% { box-shadow: 0 0 0 14px hsla(0, 0%, 100%, 0.439);}
+100% { box-shadow: 0 0 0 22px hsla(0, 0%, 100%, 0.433);}
+}
+
+/* Float Animation */
+.Floating
+{
+    animation-name: Float;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes Float 
+{
+  0%
+  {
+    transform: translate(0 , 0px) rotate(0deg);
+  }  
+  50%
+  {
+    transform: translate(0 , -25px) rotate(-5deg);
+  }  
+  100%
+  {
+    transform: translate(0 , 0px) rotate(0deg);
+  }  
+}
+
+/* Slide-right for popup */
+.Slide-Right
+{
+    animation-name: Slide-Right;
+    animation-duration: 1s;
+    animation-iteration-count: alternate;
+    animation-timing-function: ease-in-out;  
+}
+@keyframes Slide-Right 
+{
+0%
+{
+    transform: translateX(-100%);
+}    
+100%
+{
+    transform: translateX(0%);
+}    
+}
+
+/* .fade-up
+{
+    animation-name: Fade-Up;
+    animation-duration: 500ms;
+    animation-iteration-count: alternate;
+    animation-timing-function: ease-in-out;    
+}
+@keyframes Fade-Up
+{
+0%
+{
+    transform: translateY(-100%);
+    opacity: 0;
+}    
+100%
+{
+    transform: translateY(0%);
+    opacity: 1;
+}    
+} */
